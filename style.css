@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-shadow: 0;
+}
+body{
+    background-color: #ede6e6;
+}
+
+.btn-top{
+    padding:10px 40px;
+    position: absolute;
+    top:40px;
+    right: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: rgb(218, 156, 133);
+    border: none;
+    font-weight: 600;
+    color: white;
+}
+.btn-top:hover{
+    background-color: orangered;
+    color: white;
+}
+.pass-container{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    .password-output{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-family: "Sixtyfour Convergence", sans-serif;
+            font-size: 54px;
+            margin-bottom: 70px;
+        }
+    }
+    
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+    button{
+        padding:10px 40px;
+        font-size: 16px;
+        border-radius: 10px;
+        background-color: rgb(218, 156, 133);
+        border: none;
+        font-weight: 600;
+        color: white;
+    }
+    button:hover{
+        background-color: orangered;
+        color: white;
+    }
+    
+    label{
+        font-family: "Sixtyfour Convergence", sans-serif;
+        
+    }
+    input{
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 30px;
+    }
+}
+
+.container-generated{
+    background-color: #f6f6f6;
+    width: 80vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    font-size: 24px;
+
+}
+
+@media (max-width: 996px){
+    .pass-container{
+        .password-output{
+            
+            h1{
+                font-size: 48px;
+                
+            }
+        }
+        
+    }
+}
+@media (max-width:879px){
+    .pass-container{
+        .password-output{
+            h1{
+                font-size: 30px;
+            }
+        }
+    }
+    #form-content{
+        flex-direction: column;
+    }
+}
+@media (max-width: 578px){
+    .pass-container{
+        .password-output{
+            h1{
+                font-size: 24px;
+            }
+        }
+    }
+    .pass-container{
+        password-output{
+            form{
+                label{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
