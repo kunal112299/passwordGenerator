@@ -66,6 +66,7 @@ form{
         
     }
     input{
+        border: 1px gray solid;
         padding: 10px;
         font-size: 16px;
         border-radius: 30px;
