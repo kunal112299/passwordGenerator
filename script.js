@@ -22,7 +22,7 @@ function options() {
     if(num.checked){
         characters +=numeric;
     }
-    if(num.checked){
+    if(sym.checked){
         characters+=symbol
     }
     return characters;
